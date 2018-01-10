@@ -1,3 +1,9 @@
+/*
+* Script using /XRMServices/2011/Organization.svc/web endpoint to retrieve audit history of a record. In this example, a contact record is used. Modify the contact ID in the request body to view the return value. 
+* To quickly get a contact ID you can search using the Web API with the following URL and search for contactid.
+*    https://myOrganization.api.crm.dynamics.com/api/data/v9.0/contacts
+*/
+
 "use strict";
 var Sdk = window.Sdk || {};
 
