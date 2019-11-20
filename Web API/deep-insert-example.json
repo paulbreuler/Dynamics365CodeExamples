@@ -1,0 +1,46 @@
+### URL & HEADERS ###
+POST /api/data/v9.1/opportunities HTTP/1.1
+Host: contoso.crm.dynamics.com​
+Content-Type: application/json
+
+### BODY ###
+{
+    "pricelevelid@odata.bind": "/pricelevels(3e30c3c0-a90b-ea11-a811-000d3a337c9e)",
+    "name": "Create Opportunity and Deep Insert Products",
+    "processid": "3e8ebee6-a2bc-4451-9c5f-b146b085413a",
+    "isrevenuesystemcalculated": false,
+    "msdyn_forecastcategory": 100000001,
+    "transactioncurrencyid@odata.bind": "/transactioncurrencies(9bcfbab2-6c08-ea11-a813-000d3a5a1707)",
+    "statuscode": 1,
+    "statecode": 0,
+    "ownerid@odata.bind": "/systemusers(dbfb27c7-cff1-41a3-8284-828d2059a5b8)",
+    "product_opportunities": [
+        {
+            "priceperunit": 1,
+            "productdescription": "Example Product 1",
+            "quantity": 10,
+            "producttypecode": 1,
+            "ispriceoverridden": true,
+            "isproductoverridden": true,
+            "transactioncurrencyid@odata.bind": "/transactioncurrencies(9bcfbab2-6c08-ea11-a813-000d3a5a1707)"
+        },
+        {
+            "priceperunit": 1,
+            "productdescription": "Example Product 2",
+            "quantity": 10,
+            "producttypecode": 1,
+            "ispriceoverridden": true,
+            "isproductoverridden": true,
+            "transactioncurrencyid@odata.bind": "/transactioncurrencies(9bcfbab2-6c08-ea11-a813-000d3a5a1707)"
+        },
+        {
+            "priceperunit": 1,
+            "productdescription": "Example Product 3",
+            "quantity": 10,
+            "producttypecode": 1,
+            "ispriceoverridden": true,
+            "isproductoverridden": true,
+            "transactioncurrencyid@odata.bind": "/transactioncurrencies(9bcfbab2-6c08-ea11-a813-000d3a5a1707)"
+        }
+    ]
+}

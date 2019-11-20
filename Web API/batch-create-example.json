@@ -1,0 +1,45 @@
+###  URL & HEADERS ###
+POST /api/data/v9.1/$batch HTTP/1.1
+Host: orga1f0c1a2.crm.dynamics.com
+Content-Type: multipart/mixed;boundary=batch_1574273149947
+
+### BODY ###
+--batch_1574273149947
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+POST /api/data/v9.1/opportunityproducts HTTP/1.1
+Host: orga1f0c1a2.crm.dynamics.com
+Content-Type: application/json
+
+{
+    "priceperunit": 1,
+    "productdescription": "Example Product 7",
+    "quantity": 10,
+    "producttypecode": 1,
+    "ispriceoverridden": true,
+    "isproductoverridden": true,
+    "transactioncurrencyid@odata.bind": "/transactioncurrencies(9bcfbab2-6c08-ea11-a813-000d3a5a1707)",
+    "opportunityid@odata.bind": "/opportunities(671b6faa-a90b-ea11-a811-000d3a337c9e)"
+}
+
+--batch_1574273149947
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+POST /api/data/v9.1/opportunityproducts HTTP/1.1
+Host: orga1f0c1a2.crm.dynamics.com
+Content-Type: application/json
+
+{
+    "priceperunit": 1,
+    "productdescription": "Example Product 8",
+    "quantity": 10,
+    "producttypecode": 1,
+    "ispriceoverridden": true,
+    "isproductoverridden": true,
+    "transactioncurrencyid@odata.bind": "/transactioncurrencies(9bcfbab2-6c08-ea11-a813-000d3a5a1707)",
+    "opportunityid@odata.bind": "/opportunities(671b6faa-a90b-ea11-a811-000d3a337c9e)"
+}
+
+--batch_1574273149947--
