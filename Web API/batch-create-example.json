@@ -1,6 +1,6 @@
 ###  URL & HEADERS ###
 POST /api/data/v9.1/$batch HTTP/1.1
-Host: orga1f0c1a2.crm.dynamics.com
+Host:contoso.crm.dynamics.com
 Content-Type: multipart/mixed;boundary=batch_1574273149947
 
 ### BODY ###
@@ -9,12 +9,12 @@ Content-Type: application/http
 Content-Transfer-Encoding: binary
 
 POST /api/data/v9.1/opportunityproducts HTTP/1.1
-Host: orga1f0c1a2.crm.dynamics.com
+Host: contoso.crm.dynamics.com
 Content-Type: application/json
 
 {
     "priceperunit": 1,
-    "productdescription": "Example Product 7",
+    "productdescription": "Example Product 1",
     "quantity": 10,
     "producttypecode": 1,
     "ispriceoverridden": true,
@@ -28,12 +28,12 @@ Content-Type: application/http
 Content-Transfer-Encoding: binary
 
 POST /api/data/v9.1/opportunityproducts HTTP/1.1
-Host: orga1f0c1a2.crm.dynamics.com
+Host:contoso.crm.dynamics.com
 Content-Type: application/json
 
 {
     "priceperunit": 1,
-    "productdescription": "Example Product 8",
+    "productdescription": "Example Product 2",
     "quantity": 10,
     "producttypecode": 1,
     "ispriceoverridden": true,
